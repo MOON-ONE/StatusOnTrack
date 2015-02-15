@@ -114,7 +114,7 @@ header, footer, section {
 
 div.shell {
   display: block;
-  width: 670px;
+  width: 650px;
   margin: 0 auto;
 }
 
@@ -124,7 +124,7 @@ header {
   position: relative;
   z-index: 2;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 1000px;
   top: 38px;
 }
 
@@ -184,7 +184,7 @@ div#no-downloads {
   position: relative;
   display: block;
   height: 197px;
-  width: 550px;
+  width: 650px;
   padding-bottom: 150px;
   margin: -80px auto -150px;
   z-index: 1;
@@ -195,7 +195,7 @@ div#no-downloads span.inner {
   display: block;
   position: relative;
   height: 197px;
-  width: 550px;
+  width: 650px;
   background: transparent url(../images/download-sprite.png) 0 0 no-repeat;
 }
 
@@ -203,7 +203,7 @@ section#downloads a {
   display: block;
   position: relative;
   height: 67px;
-  width: 275px;
+  width: 325px;
   padding-top: 130px;
   background: transparent url(../images/download-sprite.png) 0 0 no-repeat;
   text-align: center;
@@ -231,7 +231,7 @@ section#downloads a.zip {
 
 section#downloads a.tgz {
   float: right;
-  background-position: -275px 0;
+  background-position: -325px 0;
 }
 
 section#downloads a.zip:hover {
@@ -239,7 +239,7 @@ section#downloads a.zip:hover {
 }
 
 section#downloads a.tgz:hover {
-  background-position: -275px -197px;
+  background-position: -325px -197px;
 }
 
 span.banner-fix {

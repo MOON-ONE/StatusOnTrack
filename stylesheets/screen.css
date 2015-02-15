@@ -118,22 +118,6 @@ div.shell {
   margin: 0 auto;
 }
 
-a#forkme_banner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 138px;
-  height: 138px;
-  display: block;
-  background: transparent url(../images/fork-sprite.png) 0 0 no-repeat;
-  text-indent: -9000px;
-  z-index: 3;
-}
-
-a#forkme_banner:hover {
-  background-position: 0 -138px;
-}
-
 /* header */
 
 header {
@@ -269,7 +253,8 @@ span.banner-fix {
 
 section#main_content {
   z-index: 2;
-  padding: 20px 82px 0;
+/*  padding: 20px 82px 0;*/
+    padding-top: 80px;
   min-height:185px;
 }
 
@@ -279,7 +264,7 @@ footer {
   background: transparent url(../images/footer-ramp.jpg) center -1px no-repeat;
   padding-top: 104px;
   margin: -94px auto 40px;
-  max-width: 560px;
+  max-width: 760px;
   text-align: center;
 }
 
@@ -484,7 +469,7 @@ th {
 
 td {
   display: table-cell;
-  padding: 0 .7em;
+  padding: .7em .7em .7em .7em;
   border: solid #ece4d8;
   border-width: 0 2px 2px 0;
 }

@@ -17,7 +17,10 @@
 		$(document).ready(function () {
 			$('#main_content').headsmart();
 			// loading content
-			$("#section-design-problem-overview").load("content/design-problem-overview.html");
+			$('div[id^="section-"]').each(function () {
+			    alert(this.id);
+			    $(this).load("content/" + this.id + ".html");
+			});
 		})
 	</script>
 	<title>Project Status by MOON-ONE</title>
@@ -92,13 +95,8 @@
 					<span class="octicon octicon-link"></span>
 				</a>Target Users
 			</h3>
-			<div style="text-align:center; font-weight:bold; padding: 20px 0px 5px 0px">
-				<span>NUS students who need to buy or sell their used textbooks</span>
+			<div id="section-target-user">
 			</div>
-			<p>The aim of our project is to understand the existing design problems of the current IVLE used textbook forum and finally redesign it or produce a new platform. So we choose those students who need to buy or sell their used textbooks, especially for students who prefer to use an online platform to trade as our target users. Therefore, our target users are NUS students, either undergraduate or graduate students, who need to buy or sell secondhand textbooks. 
-			</p>
-			<p>We have a large group of target users for two reasons. On one hand, since some of the textbooks can be quite expensive, some students, may prefer to buy a used textbooks from other students. On the other hand, some textbooks are only used by one specific module, students may not use them again once they have finished that module. In this case, some students may choose to sell the textbooks to other students. Therefore, these two groups of students may both become our potential users. 
-			</p>
 
 			<br>
 			<h3>

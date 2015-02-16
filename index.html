@@ -11,11 +11,15 @@
 	<link rel="stylesheet" href="stylesheets/pygment_trac.css">
 
 	<script type="text/javascript" src="javascripts/modernizr.js"></script>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="javascripts/jquery-2.1.3.min.js"></script>
 	<script type="text/javascript" src="javascripts/headsmart.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function () {
-			$('#main_content').headsmart()
+			$('#main_content').headsmart();
+			// loading content
+			$('div[id^="section-"]').each(function () {
+			    $(this).load("content/" + this.id + ".html");
+			});
 		})
 	</script>
 	<title>Project Status by MOON-ONE</title>
@@ -73,22 +77,16 @@
 
 
 			<br>
+			<!-- content -->
+
 			<h3>
 				<a id="design-problem-overview" class="anchor" href="#design-problem-overview" aria-hidden="true">
 					<span class="octicon octicon-link"></span>
 				</a>
 				Design Problem Overview
 			</h3>
-
-			<p>At the beginning of each semester, almost every NUS student will encounter a problem: purchasing textbooks. However, based on our research, more than 72% of textbooks in Co-op cost more than 40 SGD. Some are even more than 60 SGD. The high prices lead to the birth of IVLE used-textbook market.</p>
-
-			<p>According to our research, there are generally three ways for NUS students to buy or sell their used textbooks. </p>
-			<p>1. 10%:  from friends/senior/juniors</p>
-			<p>2. 10%:  via Carousell</p>
-			<p>3. 80%:  via IVLE used-textbook forum</p>
-			<p>It is obvious that IVLE used textbook forum are the main platform for used textbooks exchanging. </p>
-
-			<p>However, based on our personal experiences and some complaint from classmates, our team find there are a lot of design problems with the forum. These problems include the confusing user interface design, defective functionalities, etc. These problems waste users’ time and bring in awful user experiences. Hence, our team would like to put our effort in the production of a new used textbook exchange platform. </p>
+			<div id="section-design-problem-overview">
+			</div>
 
 			<br>
 			<h3>
@@ -96,13 +94,8 @@
 					<span class="octicon octicon-link"></span>
 				</a>Target Users
 			</h3>
-			<div style="text-align:center; font-weight:bold; padding: 20px 0px 5px 0px">
-				<span>NUS students who need to buy or sell their used textbooks</span>
+			<div id="section-target-user">
 			</div>
-			<p>The aim of our project is to understand the existing design problems of the current IVLE used textbook forum and finally redesign it or produce a new platform. So we choose those students who need to buy or sell their used textbooks, especially for students who prefer to use an online platform to trade as our target users. Therefore, our target users are NUS students, either undergraduate or graduate students, who need to buy or sell secondhand textbooks. 
-			</p>
-			<p>We have a large group of target users for two reasons. On one hand, since some of the textbooks can be quite expensive, some students, may prefer to buy a used textbooks from other students. On the other hand, some textbooks are only used by one specific module, students may not use them again once they have finished that module. In this case, some students may choose to sell the textbooks to other students. Therefore, these two groups of students may both become our potential users. 
-			</p>
 
 			<br>
 			<h3>
@@ -110,51 +103,39 @@
 					<span class="octicon octicon-link"></span>
 				</a>Contextual Inquiry
 			</h3>
-			<h4>briefing</h4>
-			<br>
-			<p>
-				Briefly describe the process you adopted to analyse the particular problem you are working on. Be specific by discussing the process in the context of your specific problem and the data you collected and provide examples.
-			</p>
+			<h4>Briefing</h4>
+			<div id="section-contextual-inquiry-briefing">
+			</div>
+			
 			<br>
 
-			<h4>summary</h4>
+			<h4>Summary</h4>
 			<h5>user 1</h5>
-			<p>
-				Our user1 is a 25-year-old male student from computer science. We conducted the interview at COM1-DR1, during this 38-minutes-interview Mingyu and Yuxuan were the Interviewers while Fanshi and Jinghan were the note takers. This user raised a very good point that we haven’t noticed before: when users click the button to insert an audio file, the forum will pop up a window to ask users to install a software called Silverlight. Our user thought the pop up window was very annoying and almost no one would actually choose to install the software. Besides, our user1 thought inserting an audio file is not really a useful feature. Based on this experience, we would like to cancel some seldom used features also avoid things like pop up window which may annoy the users. Last but not least, the server response was very slow during the interview, it took about 1 to 2 minutes to access a page. We think the server problem is also very serious.
-			</p>
+			<div id="section-contextual-inquiry-summary-user-1">
+			</div>
+
 			<h5>user 2</h5>
-			<p>
-				Our user2 is a 21-year-old male student from computer science. We conducted the interview at COM1-DR1. During this 28-minutes-interview Fanshi and Jinghan were the Interviewers while Mingyu and Yuxuan were the note takers. Our user2 mentioned that there are some textbooks that are not used by any module, resulting in that he doesn’t know how to search for it. Based on this point, we think the new forum needs to be able to search for not only the module code but also the name of the textbook. 
-			</p>
+			<div id="section-contextual-inquiry-summary-user-2">
+			</div>
 
 			<h5>user 3</h5>
-			<p>
-				Our user3 is a 22-year-old male student from computer science. We conducted the interview at COM1-DR1. During this 32-minutes-interview, Jinghan and Mingyu were the Interviewers while Yuxuan and Fanshi were the note takers. The problem that user3 encountered during the interview is that he cannot quickly come up with what information to put in a post. He mentioned that users could easily forget to put some important informations such as their contact numbers. Therefore, our user3 suggested that we can provide some templates to help users post quickly. We think this is a very good idea. 
-			</p>
+			<div id="section-contextual-inquiry-summary-user-3">
+			</div>
 
 			<h5>user 4</h5>
-			<p>
-				Our user4 is a 23-year-old female student from Chinese study. We conducted the interview at AS1-02-01. During this 30-minutes-interview, Yuxuan and Fanshi were the Interviewers while Mingyu and Jinghan were the note takers. When user4 tried the system, she thought there was only 10 entries in total. She didn’t notice that it was actually 10 entries per page and she can click the scroll pane to go to next page. Therefore, we decide to increase the number entries and make the navigation buttons more obvious. 
-			</p>
+			<div id="section-contextual-inquiry-summary-user-4">
+			</div>
+
 			<br>
 
-			<h4>reflection</h4>
-			<p>
-				The very first contextual inquiry is not as easy as we expected. We assigned two pals to be the interviewers and the rest two to be the note takers. This strategy has its own pros and cons. For the positive side, two interviewers created much more “run-time” ideas than only one: it is because for the same user behavior, two interviewers may have two completely different sets of questions, resulting in a wider inquiry coverage. However, some issues may occur on the coordination of the two interviewers. Sometimes, one interviewer may be interrupted by the other and thus the pace of the whole interview may go out of control. Maybe next time we’ll take a modified way: assign one teammate as the main interviewer, and assign another as “co-interviewer”. The co-interviewer will take notes of the questions he/she comes up during the interview and ask the interviewee when the main interviewer finishes his/her question sets. Or the co-interviewer will ask the interviewee in the end of the interview as complementary questions.<br><br>
-
-				Most of the problems of the existing systems are revealed during the contextual inquiry and there are some wonderful ideas which we had never thought of before. Interestingly, such shining ideas are always from some subliminal words of the users instead of those formal answers. The viewpoints of our interviewees are greatly different with respect to their majors. The findings from the more professional interviewees (computer science students in this case) are usually the technical ones, such as the bugs or the poor performance of the system while other responses tend to be more general or intuitive.<br><br>
-
-				The time periods the interview carried out introduces a lot of difficulties. Since it’s in the right middle of a semester, there are very few users using the used-text book forum. In other words, we had to ask the interviewees to pretend they are buying or selling their used textbooks. Although we created some posts on the existing forum in order to simulate a relative real situation, yet there is still a gulf between the contextual inquiry and actual cases. Another difficulty we met is the time length of the interview. Since everybody in NUS has a fast pace, it is not easy to ask a stranger to stall and accept a thirty-minute interview, even with rewards (We did prepare some rewards).<br><br>
-
-				We did ask both general and specific questions. Some questions like “Does the interface bring troubles to you” will definitely gives very abstract answers. Although some specific questions may have better effects, yet we found that a demo is much more useful than a hundred questions. The demo will force the users to be concentrated. Furthermore, the demo process may reveal problems which interviewees usually ignore in every day life. Such problems are the ones that users usually are not aware of. However, they will appreciate it a lot if these problems are well solved. In other words, users are among the ones we value the most.<br><br>
-
-				Of course, there are easy moments during the proceeding of such contextual inquiries. We enjoyed the process talking with end users. We were also surprised and excited at the ideas and new design options brought by them. The first step is taken and we are looking forward to the next. 
-			</p>
-			<br>
+			<h4>Reflection</h4>
+			<div id="section-contextual-inquiry-reflection">
+			</div>
+			
 			<br>
 
 
-			<h4>raw data</h4>
+			<h4>Raw data</h4>
 			<table>
 				<th>
 					<td align='center'>Audio Recordings</td>
@@ -191,7 +172,7 @@
 			</table>
 
 			<br>
-			<h4>consent forms</h4>
+			<h4>Consent form</h4>
 			The completed consent forms are kept confidential due to the privacy issues, but you can download <a href='data/interview/field-notes/pdf/consent-form.pdf'>the blank copy</a> here.    
 
 			<br>
@@ -201,7 +182,7 @@
 				</a>Data Analysis
 			</h3>
 
-			<h4>briefing</h4>
+			<h4>Briefing</h4>
 			<p>
 				Briefly, we went through the following post-interview processes:<br>
 				<pre>
@@ -261,18 +242,59 @@ we would return to the raw data to confirm the interviewee's meaning
 			</p>
 			<br>
 
-			<h4>Affinity Diagram</h4>
+			<h4>affinity diagram</h4>
 			<p>The high quality affinity diagram is available <a href="data/affinity-diagram/affinity-diagram.pdf">here</a>.</p>
 			<br>
 
-			<h4>hierarchy</h4>
-			<h5></h5>
+			<h4>Hierarchy</h4>
 			<h6>key observations</h6>
+			<p>
+			Users prefer more accessible tools such as mobile application. If the platform is integrated in other system, the user should be able to find the entry point easily.<br>
+			Elegant user interface will attract the user at the first glance.<br>
+			The system should be navigable, user may want to go back the initial place.<br>
+			The UI design should conform to a certain convention, otherwise the user might feel confused.<br>
+			Currently some of the important functionalities are not very obvious enough; the user may not know what they can do.<br>
+			Displaying too many unnecessary elements will decrease the usability of the system.<br>
+			System should be responsive and error-free, people will lose their patience when waiting and encountering server error.<br>
+			Users tend to check the most recent post first.<br>
+			Users expects to get notified when there are updates on their post.<br>
+			Users prefer to be guided instead of exploring the system themselves.<br>
+			Users may want to compare the available choices with each other.<br>
+			Users tend to choose the product whose target user group is more closed to the user.<br>
+			Users tend to choose the product with more active users.<br>
+			Users tend to choose the product that is more usable.<br>
+			Users may want to see their past posts.<br>
+			Buy and sell are better to be separated.<br>
+			People may want to see the result that they post.<br>
+			Redirection should make sense.<br>
+			There should not have any irrelevant content.<br>
+			Searching in a broader range will reduce the unnecessary work.<br>
+			Pictures and images is more attractive than plain text.<br>
+			Good categorization will make the system clearer.<br>
+			A standard format will make the various content well organized.<br>
+			</p>
 			<h6>user statements</h6>
 			<h6>breakdown</h6>
 			<h6>insights</h6>
 			<h6>design ideas</h6>
 			<h6>questions & ambiguities</h6>
+			<p>
+			Building a credit system so that users can rate for the sellers and buyers<br>
+			Good: The system may help users to identify good sellers and buyers so that they can have high quality deals.<br>
+			Bad: This feature has high possibility that becomes a useless feature at the end since many users may not bother to rate after they complete their deals.<br>
+			<br>
+			Making an app for the forum<br>
+			Good: App is more portable and maybe easier for users to use.<br>
+			Bad: Implementation and maintenance are quite time consuming.<br>
+			<br>
+			Having a colorful UI<br>
+			Good: The UI will become more attractive and some users may think it’s clearer and easier to use with.<br>
+			Bad: The theme will become not consistent with the whole IVLE.<br>
+			<br>
+			Adding another column to state the price and condition<br>
+			Good: Users can see the price and condition quickly. This feature is good for comparing.<br>
+			Bad: Providing too much info at the title may make the title become messy.<br>
+			</p>
 
 			<br>
 			<h3>
@@ -286,75 +308,75 @@ we would return to the raw data to confirm the interviewee's meaning
 			<h6>What tasks do they now perform?</h6>
 			<pre>
 Buying textbooks:
-	1. Face-to-face deal
-		a. Buyer and seller contact each other, deciding the meeting venue 
-		   and time;
-		b. Buyer and seller meet;
-		c. Buyer gives the seller money;
-		d. Seller gives the buyer textbook.
-	2. Using IVLE Used Textbook Forum
-		a. Opens the browser, types in the IVLE URL, clicks enter;
-		b. Logs in using NUSNET identification and password;
-		c. Clicks the link at the right-bottom corner to opens the forum 
-		   homepage;
-		d. Finds the correct faculty title, clicks the faculty name to enter 
-		   the post page;
-		e. Clicks the search bar, types in the module code or textbook title;
-		f. Clicks the search button or presses enter;
-		g. Finds the matching posts, clicks the post title to enter the post;
-		h. If the user is satisfied with the information of the textbook, 
-		   replies the post or contacts the seller;
-		i. Waits for the seller’s reply;
-		j. Negotiates about the price or meeting details;
-		k. Buyer and seller meet;
-		l. Buyer gives the seller money;
-		m. Seller gives the buyer textbook.
-	3 Using Carousell
-		a. Opens the application;
-		b. Goes to the textbook category;
-		c. Taps the search bar;
-		d. Types in the textbook title or module code;
-		e. Clicks the matching item to open the page;
-		f. If the user is satisfied with the information of the textbook, 
-		   leaves comment under the post or makes offer;
-		g. Waits for the seller’s reply;
-		h. Negotiates about the price or meeting details;
-		i. Buyer and seller meet;
-		j. Buyer gives the seller money;
-		k. Seller gives the buyer textbook.
+  1. Face-to-face deal
+    a. Buyer and seller contact each other, deciding the meeting venue 
+       and time;
+    b. Buyer and seller meet;
+    c. Buyer gives the seller money;
+    d. Seller gives the buyer textbook.
+  2. Using IVLE Used Textbook Forum
+    a. Opens the browser, types in the IVLE URL, clicks enter;
+    b. Logs in using NUSNET identification and password;
+    c. Clicks the link at the right-bottom corner to opens the forum 
+       homepage;
+    d. Finds the correct faculty title, clicks the faculty name to enter 
+       the post page;
+    e. Clicks the search bar, types in the module code or textbook title;
+    f. Clicks the search button or presses enter;
+    g. Finds the matching posts, clicks the post title to enter the post;
+    h. If the user is satisfied with the information of the textbook, 
+       replies the post or contacts the seller;
+    i. Waits for the seller’s reply;
+    j. Negotiates about the price or meeting details;
+    k. Buyer and seller meet;
+    l. Buyer gives the seller money;
+    m. Seller gives the buyer textbook.
+  3 Using Carousell
+    a. Opens the application;
+    b. Goes to the textbook category;
+    c. Taps the search bar;
+    d. Types in the textbook title or module code;
+    e. Clicks the matching item to open the page;
+    f. If the user is satisfied with the information of the textbook, 
+       leaves comment under the post or makes offer;
+    g. Waits for the seller’s reply;
+    h. Negotiates about the price or meeting details;
+    i. Buyer and seller meet;
+    j. Buyer gives the seller money;
+    k. Seller gives the buyer textbook.
 
 
 Selling textbooks:
-	1. Face-to-face deal
-		a. Buyer and seller contact each other, deciding the meeting venue 
-		   and time;
-		b. Buyer and seller meet;
-		c. Buyer gives the seller money;
-		d. Seller gives the buyer textbook.
-		
-	2. Using IVLE Used Textbook Forum
-		a. Opens the browser, types in the IVLE URL, clicks enter;
-		b. Logs in using NUSNET identification and password;
-		c. Clicks the link at the right-bottom corner to opens the forum 
-		   homepage;
-		d. Finds the correct faculty title, clicks the faculty name to 
-		   enter the post page; 
-		e. Clicks the NEW TOPIC button to create a new post;
-		f. Describes the textbook and provides a contact number;
-		g. Submits the post and waits for buyer’s reply;
-		j. Negotiates about the price or meeting details;
-		k. Buyer and seller meet;
-		l. Buyer gives the seller money;
-		m. Seller gives the buyer textbook.
-	3. Using Carousell
-		a. Opens the application;
-		b. Create a new post;
-		c. Provides the details of the textbook;
-		d. Submits the post and waits for buyer’s reply;
-		h. Negotiates about the price or meeting details;
-		i. Buyer and seller meet;
-		j. Buyer gives the seller money;
-		k. Seller gives the buyer textbook.
+  1. Face-to-face deal
+    a. Buyer and seller contact each other, deciding the meeting venue 
+       and time;
+    b. Buyer and seller meet;
+    c. Buyer gives the seller money;
+    d. Seller gives the buyer textbook.
+    
+  2. Using IVLE Used Textbook Forum
+    a. Opens the browser, types in the IVLE URL, clicks enter;
+    b. Logs in using NUSNET identification and password;
+    c. Clicks the link at the right-bottom corner to opens the forum 
+       homepage;
+    d. Finds the correct faculty title, clicks the faculty name to 
+       enter the post page; 
+    e. Clicks the NEW TOPIC button to create a new post;
+    f. Describes the textbook and provides a contact number;
+    g. Submits the post and waits for buyer’s reply;
+    j. Negotiates about the price or meeting details;
+    k. Buyer and seller meet;
+    l. Buyer gives the seller money;
+    m. Seller gives the buyer textbook.
+  3. Using Carousell
+    a. Opens the application;
+    b. Create a new post;
+    c. Provides the details of the textbook;
+    d. Submits the post and waits for buyer’s reply;
+    h. Negotiates about the price or meeting details;
+    i. Buyer and seller meet;
+    j. Buyer gives the seller money;
+    k. Seller gives the buyer textbook.
 			</pre><br>
 			<h6>What tasks are desired?</h6>
 			<p>
@@ -406,9 +428,9 @@ Selling textbooks:
 
             <p>The features are ordered bases on the number of concerns they raised.</p>
 
-            <h5>A neat but elegant UI</h5>
+            <br>
+            <h5>User Interface</h5>
             <p>Although we conduct interviews on only four target users, surprisingly there are twenty concerns (one fifth) are about the user interface. The word “nice”, “elegant” or “nice-looking” might be too general to conclude the exact design specifics. Therefore, we kept digging down this thread and found that users want the interface to contains the following detailed features: </p>
-
             <h6>clear</h6>
             <p>The important informations should be clear to users. For example, the prices or titles should be placed carefully so that the user do not have to switch between pages frequently to check these information
             </p>
@@ -422,13 +444,15 @@ Selling textbooks:
             <h6>self-explaining</h6>
             <p>since user will not bother to read a user guide before using the system, the system has to be self-explaining to some extent. For example, use placeholders to indicator the use of certain textfields, make reasonable titles for pages to help user navigate through the whole system.</p>
 
+            <br>
             <h5>Standards for information format</h5>
             <p>Among the 101 concerns, 10 are on the information format issues. These issues include user input standard and some unified standard about the book condition. Specifically,</p>
             <h6>create templates for user</h6>
             <p>When user want to sell a text book, they should be some post skeletons for users to choose. What they need to do then is just fill in the important figures, such as price, condition, contact, etc. This helps users to recognize information they need to input instead of recalling, thus it lowers the chance that a user miss some important information. These templates should separate the information user input to different sections, each of which has its unique id. This will reserve the space for data manipulations later.</p>
             <h6>A standard for book conditions</h6>
             <p>Sometimes descriptions like 9/10, 8/10 do not give the buyers enough information to know about the exact condition of the book. A standard, which could be measured in figures, is need to act as the ruler of such descriptions.</p>
-
+            
+            <br>
             <h5>Responsiveness</h5>
             <p>7 concerns are on the responsiveness of system. Users are not satisfied with the connections speed of the existing forum. Something that we need to do include</p>
             <h6>Efficient algorithms to load views</h6>
@@ -436,6 +460,7 @@ Selling textbooks:
             <h6>Deploy on faster servers</h6>
             <p>This may be another factor that affects the performance of the website badly. We may want to deploy it on a faster server when it proves that the performance of current ones is the bottleneck of the system.</p>
 
+            <br>
             <h5>Picture Attachments</h5>
 
             <p>6 concerns are on attaching pictures to the post. User want a convenient way to upload and view images. Some requirements are:</p>
@@ -445,8 +470,10 @@ Selling textbooks:
             <h6>Easy Viewing</h6>
             <p>Since we will support easy uploading, some posts may get many pictures attached inside. We need a organized way to display such pictures.</p>
 
+            
+            <br>
             <h5>Search</h5> Interestingly, only 4 concerns are about the searching functionality of the system, but all of our interviewees view searching as the most important functionality of a textbook forum. The requirements brought up by the users are:
-
+            
             <h6>Global Search</h6>
             <p>There should be a way to search among all the books available on the forum. Although we will have different categories, yet we have to provide a second way in case some sellers put their books in the wrong section.</p>
             <h6>Search for various attributes other than title and module</h6>

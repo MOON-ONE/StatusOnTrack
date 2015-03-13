@@ -134,7 +134,7 @@ header span.ribbon-inner {
   background-color: #cd596b;
   border: 4px solid #7c334f;
   padding: 2px;
-  margin-top: 20px;
+  margin-top: 53px;
   margin-left: -25px;
   margin-right: -25px;
   z-index: 1;
@@ -393,7 +393,7 @@ ul {
   padding-left: 1.35em;
 }
 
-ul li {
+ul:not(.nav) li {
   padding-left: 10px;
   background: transparent url(../images/chevron.png) left 6px no-repeat;
 }
@@ -547,4 +547,11 @@ dd p:first-child {
   margin: .8em 0;
   font-size: .85em;
   font-style: italic;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  top: 0px;
+  z-index: 20;
 }

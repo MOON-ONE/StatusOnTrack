@@ -435,8 +435,8 @@ h6 small,
 .h6 small {
   color: #e7e9ec;
 }
-h1,
-h2,
+h1:not(.rb),
+h2:not(.rb),
 h3 {
   margin-top: 30px;
   margin-bottom: 15px;
@@ -450,11 +450,11 @@ h6 {
 h6 {
   font-weight: normal;
 }
-h1,
+h1:not(.rb),
 .h1 {
   font-size: 61px;
 }
-h2,
+h2:not(.rb),
 .h2 {
   font-size: 53px;
 }

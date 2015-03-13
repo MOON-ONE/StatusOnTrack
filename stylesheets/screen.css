@@ -555,3 +555,8 @@ nav {
   top: 0px;
   z-index: 20;
 }
+
+.fixed {
+    position: fixed;
+    top: 0;
+}

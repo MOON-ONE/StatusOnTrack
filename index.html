@@ -20,6 +20,30 @@
             $('div[id^="section-"]').each(function () {
                 $(this).load("content/" + this.id + ".html");
             });
+
+            var previousScroll = 0,
+            headerOrgOffset = $('#nb').height();
+
+            $(window).scroll(function() {
+                var currentScroll = $(this).scrollTop();
+                if (currentScroll > headerOrgOffset) {
+                    if (currentScroll > previousScroll) {
+                        $('#nb').animate({
+                             top: '-60px'      //Change to Height of navbar
+                        },70);               //Mess with animate time
+                    } else {
+                        $('#nb').animate({
+                             top: '0px'
+                        },70);
+
+                    }
+                } else {
+                     $('#nb').animate({
+                             top: '0px'
+                        },70);
+                }
+                previousScroll = currentScroll;
+            });
         })
     </script>
     <script type="text/javascript" src="javascripts/flat-ui.js"></script>
@@ -27,7 +51,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-default" role="navigation">
+    <nav id="nb" class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
             <a class="navbar-brand" href="#">Flat UI</a>
         </div>
@@ -44,8 +68,8 @@
         <header>
             <span class="ribbon-outer">
 				<span class="ribbon-inner">
-					<h1>Project Status</h1>
-					<h2>CS3240 Interaction Design Team Moon One</h2>
+					<h1 class="rb">Project Status</h1>
+					<h2 class="rb">CS3240 Interaction Design Team Moon One</h2>
 				</span>
             <span class="left-tail"></span>
             <span class="right-tail"></span>

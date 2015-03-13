@@ -44,6 +44,14 @@
                 }
                 previousScroll = currentScroll;
             });
+
+            $('a.page-scroll').bind('click', function(event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top - 42
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
         })
     </script>
     <script type="text/javascript" src="javascripts/flat-ui.js"></script>
@@ -57,15 +65,15 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse-01">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#fakelink">Team</a></li>
-                <li><a href="#fakelink">Problem</a></li>
-                <li><a href="#fakelink">User</a></li>
-                <li><a href="#fakelink">Interview</a></li>
-                <li><a href="#fakelink">Analysis</a></li>
-                <li><a href="#fakelink">Persona</a></li>
-                <li><a href="#fakelink">Storyboard</a></li>
-                <li><a href="#fakelink">Prototype</a></li>
-                <li><a href="#fakelink">Evaluation</a></li>
+                <li><a class="page-scroll" href="#team">Team</a></li>
+                <li><a class="page-scroll" href="#problem">Problem</a></li>
+                <li><a class="page-scroll" href="#user">User</a></li>
+                <li><a class="page-scroll" href="#interview">Interview</a></li>
+                <li><a class="page-scroll" href="#analysis">Analysis</a></li>
+                <li><a class="page-scroll" href="#persona">Persona</a></li>
+                <li><a class="page-scroll" href="#storyboard">Storyboard</a></li>
+                <li><a class="page-scroll" href="#prototype">Prototype</a></li>
+                <li><a class="page-scroll" href="#evaluation">Evaluation</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </nav><!-- /navbar -->
@@ -90,10 +98,11 @@
 			</span>
         </section>
 
-
+        <div id="team">
+        </div>
         <section id="main_content">
             <h3>
-				<a id="the-team" class="anchor" href="#the-team" aria-hidden="true">
+				<a class="anchor" href="#the-team" aria-hidden="true">
 					<span class="octicon octicon-link"></span>
 				</a>The Team
 			</h3>
@@ -148,6 +157,8 @@
             <br>
             <!-- content -->
 
+            <div id="problem">
+            </div>
             <h3>
 				<a id="design-problem-overview" class="anchor" href="#design-problem-overview" aria-hidden="true">
 					<span class="octicon octicon-link"></span>
@@ -158,6 +169,8 @@
             </div>
 
             <br>
+            <div id="user">
+            </div>
             <h3>
 				<a id="target-user" class="anchor" href="#target-user" aria-hidden="true">
 					<span class="octicon octicon-link"></span>
@@ -167,6 +180,8 @@
             </div>
 
             <br>
+            <div id="interview">
+            </div>
             <h3>
 				<a id="contextual-inquiry" class="anchor" href="#contextual-inquiry" aria-hidden="true">
 					<span class="octicon octicon-link"></span>
@@ -254,7 +269,8 @@
             <br>
             <br>
             <br>
-
+            <div id="analysis">
+            </div>
             <h3>
 				<a id="data-analysis" class="anchor" href="#data-analysis" aria-hidden="true">
 					<span class="octicon octicon-link"></span>
@@ -423,8 +439,10 @@
             <br>
             <br>
             <br>
-            <br>
-            <br>
+
+            <div id="persona">
+            </div>
+            
         </section>
 
         <footer>

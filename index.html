@@ -30,17 +30,17 @@
                     if (currentScroll > previousScroll) {
                         $('#nb').animate({
                              top: '-60px'      //Change to Height of navbar
-                        },70);               //Mess with animate time
+                        },0);               //Mess with animate time
                     } else {
                         $('#nb').animate({
                              top: '0px'
-                        },70);
+                        },0);
 
                     }
                 } else {
                      $('#nb').animate({
                              top: '0px'
-                        },70);
+                        },0);
                 }
                 previousScroll = currentScroll;
             });

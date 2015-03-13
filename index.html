@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="stylesheets/core.css" media="screen">
     <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <link rel="stylesheet" href="stylesheets/flat-ui.css">
     <script type="text/javascript" src="javascripts/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
     <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -20,19 +20,56 @@
             $('div[id^="section-"]').each(function () {
                 $(this).load("content/" + this.id + ".html");
             });
+
+            var previousScroll = 0,
+            headerOrgOffset = $('#nb').height();
+
+            $(window).scroll(function() {
+                var currentScroll = $(this).scrollTop();
+                if (currentScroll > headerOrgOffset) {
+                    if (currentScroll > previousScroll) {
+                        $('#nb').animate({
+                             top: '-60px'      //Change to Height of navbar
+                        },0);               //Mess with animate time
+                    } else {
+                        $('#nb').animate({
+                             top: '0px'
+                        },0);
+
+                    }
+                } else {
+                     $('#nb').animate({
+                             top: '0px'
+                        },0);
+                }
+                previousScroll = currentScroll;
+            });
         })
     </script>
+    <script type="text/javascript" src="javascripts/flat-ui.js"></script>
     <title>Project Status by MOON-ONE</title>
 </head>
 
 <body>
+    <nav id="nb" class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Flat UI</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-01">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#fakelink">Products</a></li>
+                <li><a href="#fakelink">Features</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav><!-- /navbar -->
+
     <div class="shell">
 
         <header>
             <span class="ribbon-outer">
 				<span class="ribbon-inner">
-					<h1>Project Status</h1>
-					<h2>CS3240 Interaction Design Team Moon One</h2>
+					<h1 class="rb">Project Status</h1>
+					<h2 class="rb">CS3240 Interaction Design Team Moon One</h2>
 				</span>
             <span class="left-tail"></span>
             <span class="right-tail"></span>
@@ -45,9 +82,6 @@
 				<a href="#" class="tgz"></a>
 			</span>
         </section>
-
-
-        <span class="banner-fix"></span>
 
 
         <section id="main_content">
@@ -396,6 +430,8 @@
         </footer>
 
     </div>
+
+
 
 </body>
 

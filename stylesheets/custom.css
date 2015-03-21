@@ -1,3 +1,8 @@
 .status-link {
   font-size: 20px;
 }
+
+.storyboard-img {
+	width: 100%;
+	max-width: 8000px;
+}

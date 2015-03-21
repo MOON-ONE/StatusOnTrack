@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <link rel="stylesheet" href="stylesheets/flat-ui.css">
     <link rel="stylesheet" href="stylesheets/grid.css">
+    <link rel="stylesheet" href="stylesheets/custom.css">
     <script type="text/javascript" src="javascripts/jquery-2.1.3.min.js"></script>
     <script type="text/javascript" src="javascripts/modernizr.js"></script>
     <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
@@ -34,17 +35,17 @@
                         },0);               //Mess with animate time
                     } else {
                         $('#nb').animate({
-                             top: '0px'
-                        },0);
+                           top: '0px'
+                       },0);
 
                     }
                 } else {
-                     $('#nb').animate({
-                             top: '0px'
-                        },0);
-                }
-                previousScroll = currentScroll;
-            });
+                   $('#nb').animate({
+                       top: '0px'
+                   },0);
+               }
+               previousScroll = currentScroll;
+           });
 
             $('a.page-scroll').bind('click', function(event) {
                 var $anchor = $(this);
@@ -54,59 +55,45 @@
                 event.preventDefault();
             });
         })
-    </script>
-    <script type="text/javascript" src="javascripts/flat-ui.js"></script>
-    <title>Project Status by MOON-ONE</title>
+</script>
+<script type="text/javascript" src="javascripts/flat-ui.js"></script>
+<title>Project Status by MOON-ONE</title>
 </head>
 
 <body>
-    <nav id="nb" class="navbar navbar-default" role="navigation">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#"><img height="30px" src="images/logo.png" /></a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse-01">
-            <ul class="nav navbar-nav">
-                <li><a class="page-scroll" href="#team">Team</a></li>
-                <li><a class="page-scroll" href="#problem">Problem</a></li>
-                <li><a class="page-scroll" href="#user">User</a></li>
-                <li><a class="page-scroll" href="#interview">Interview</a></li>
-                <li><a class="page-scroll" href="#analysis">Analysis</a></li>
-                <li><a class="page-scroll" href="#persona">Persona</a></li>
-                <li><a class="page-scroll" href="#storyboard">Storyboard</a></li>
-                <li><a class="page-scroll" href="#prototype">Prototype</a></li>
-                <li><a class="page-scroll" href="#evaluation">Evaluation</a></li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </nav><!-- /navbar -->
-
     <div class="shell">
 
         <header>
             <span class="ribbon-outer">
-				<span class="ribbon-inner">
-					<h1 class="rb">Project Status</h1>
-					<h2 class="rb">CS3240 Interaction Design Team Moon One</h2>
-				</span>
-            <span class="left-tail"></span>
-            <span class="right-tail"></span>
+                <span class="ribbon-inner">
+                    <h1 class="rb">Project Status</h1>
+                    <h2 class="rb">CS3240 Interaction Design</h2>
+                </span>
+                <span class="left-tail"></span>
+                <span class="right-tail"></span>
             </span>
         </header>
 
         <section id="downloads">
             <span class="inner">
-				<a href="#" class="zip"></a>
-				<a href="#" class="tgz"></a>
-			</span>
+                <a href="#" class="zip"></a>
+                <a href="#" class="tgz"></a>
+            </span>
         </section>
 
         <div id="team">
         </div>
         <section id="main_content">
             <h3>
-				<a class="anchor" href="#the-team" aria-hidden="true">
-					<span class="octicon octicon-link"></span>
-				</a>The Team
-			</h3>
+                <a class="anchor" href="#the-team" aria-hidden="true">
+                    <span class="octicon octicon-link"></span>
+                </a>
+                Moon 1
+                <br />
+                <a class="status-link" href="g1.html">G1 deliverable</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="status-link" href="g2.html">G2 deliverable</a>
+            </h3>
             <table>
                 <tr>
                     <td><img class='id_photo' src='photos/mingyu.jpg' width="135px" height="135px">
@@ -132,488 +119,9 @@
                         <strong>Wang Jinghan</strong>
                     </td>
                 </tr>
-                <tr>
-                    <td align='center'>
-                        contact interviewee<br>
-                        interview<br>
-                        analyze data<br>
-                        analyze tasks<br>
-                        website dev<br>
-                    </td>
-                    <td align='center'>
-                        take note<br>
-                        analyze data<br>
-                        analyze tasks<br>
-                        record audio<br>
-                        conclude hierarchy<br>
-                    </td>
-                    <td align='center'>
-                        contact interviewee<br>
-                        interview<br>
-                        take note<br>
-                        record audio<br>
-                        analyze data<br>
-                    </td>
-                    <td align='center'>
-                        interview<br>
-                        take note<br> 
-                        analyze data<br>
-                        analyze requirement<br>
-                        website dev<br>
-                    </td>
-                </tr>
             </table>
-
-
-            <br>
-            <!-- content -->
-
-            <div id="problem">
-            </div>
-            <h3>
-				<a id="design-problem-overview" class="anchor" href="#design-problem-overview" aria-hidden="true">
-					<span class="octicon octicon-link"></span>
-				</a>
-				Design Problem Overview
-			</h3>
-            <div id="section-design-problem-overview">
-            </div>
-
-            <br>
-            <div id="user">
-            </div>
-            <h3>
-				<a id="target-user" class="anchor" href="#target-user" aria-hidden="true">
-					<span class="octicon octicon-link"></span>
-				</a>Target Users
-			</h3>
-            <div id="section-target-user">
-            </div>
-
-            <br>
-            <div id="interview">
-            </div>
-            <h3>
-				<a id="contextual-inquiry" class="anchor" href="#contextual-inquiry" aria-hidden="true">
-					<span class="octicon octicon-link"></span>
-				</a>Contextual Inquiry
-			</h3>
-            <h4>Briefing</h4>
-            <div id="section-contextual-inquiry-briefing">
-            </div>
-
-            <br>
-
-            <h4>Summary</h4>
-            <h5>user 1</h5>
-            <div id="section-contextual-inquiry-summary-user-1">
-            </div>
-
-            <h5>user 2</h5>
-            <div id="section-contextual-inquiry-summary-user-2">
-            </div>
-
-            <h5>user 3</h5>
-            <div id="section-contextual-inquiry-summary-user-3">
-            </div>
-
-            <h5>user 4</h5>
-            <div id="section-contextual-inquiry-summary-user-4">
-            </div>
-
-            <br>
-
-            <h4>Reflection</h4>
-            <div id="section-contextual-inquiry-reflection">
-            </div>
-
-            <br>
-
-
-            <h4 id="raw_data">raw data</h4>
-            <table>
-                <th>
-                    <td align='center'>Audio Recordings</td>
-                    <td align='center'>Field Notes</td>
-                </th>
-                <tr>
-                    <td align='center'>User 1</td>
-                    <td align='center'>
-                        <a href="data/interview/audio/User%201.m4a" class="user-mention">M4A</a>
-                    </td>
-                    <td align='center'>
-                        <a href="data/interview/field-notes/pdf/user-1.pdf" class="user-mention">PDF</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td align='center'>User 2</td>
-                    <td align='center'>
-                        <a href="data/interview/audio/User%202.m4a" class="user-mention">M4A</a>
-                    </td>
-                    <td align='center'>
-                        <a href="data/interview/field-notes/pdf/user-2.pdf" class="user-mention">PDF</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td align='center'>User 3</td>
-                    <td align='center'>
-                        <a href="data/interview/audio/User%203.m4a" class="user-mention">M4A</a>
-                    </td>
-                    <td align='center'>
-                        <a href="data/interview/field-notes/pdf/user-3.pdf" class="user-mention">PDF</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td align='center'>User 4</td>
-                    <td align='center'>
-                        <a href="data/interview/audio/User%204.m4a" class="user-mention">M4A</a>
-                    </td>
-                    <td align='center'>
-                        <a href="data/interview/field-notes/pdf/user-4.pdf" class="user-mention">PDF</a>
-                    </td>
-                </tr>
-            </table>
-
-            <br>
-            <h4 id="consent_form">Consent form</h4>
-            <p>The completed consent forms are kept confidential due to the privacy issues, but you can download <a href='data/interview/field-notes/pdf/consent-form.pdf'>the blank copy</a> here.</p>
-            <br>
-            <br>
-            <br>
-            <div id="analysis">
-            </div>
-            <h3>
-				<a id="data-analysis" class="anchor" href="#data-analysis" aria-hidden="true">
-					<span class="octicon octicon-link"></span>
-				</a>Data Analysis
-			</h3>
-            <br>
-
-            <h4>briefing</h4>
-            <div id="section-data-analysis-briefing"></div>
-            <br>
-
-            <h4>detailed process</h4>
-            <div id="section-data-analysis-specific-overview"></div>
-            <br>
-            <br>
-
-            <h6 id="da-specific-t1">Thread #1: User Interface</h6>
-            <div id="section-data-analysis-specific-ui"></div>
-            <br>
-            <br>
-
-            <h6 id="da-specific-t2">Thread #2: A Standard Post Format</h6>
-            <div id="section-data-analysis-specific-standard"></div>
-            <br>
-            <br>
-
-            <h6 id="da-specific-t3">Thread #3: Responsiveness of The Whole System</h6>
-            <div id="section-data-analysis-specific-responsiveness"></div>
-            <br>
-            <br>
-
-            <h6 id="da-specific-t4">Thread #4: Picture Attachments</h6>
-            <div id="section-data-analysis-specific-attachment"></div>
-            <br>
-            <br>
-
-            <h6 id="da-specific-t5">Thread #5: Search</h6>
-            <div id="section-data-analysis-specific-search"></div>
-            <br>
-            <br>
-
-            <h4>affinity diagram</h4>
-            <p>The high quality affinity diagram is available <a href="data/affinity-diagram/affinity-diagram.pdf">here</a>.</p>
-            <br>
-
-            <h4>Hierarchy</h4>
-            <h6>key observations</h6>
-            <div id="section-data-analysis-hierarchy-observation"></div>
-            <h6>user statements</h6>
-            <div id="section-data-analysis-hierarchy-user-statements"></div>
-            <h6>breakdown</h6>
-            <div id="section-data-analysis-hierarchy-breakdown"></div>
-            <h6>insights</h6>
-            <div id="section-data-analysis-hierarchy-insights"></div>
-            <h6>design ideas</h6>
-            <div id="section-data-analysis-hierarchy-design-ideas"></div>
-            <h6>questions & ambiguities</h6>
-            <div id="section-data-analysis-hierarchy-question"></div>
-            <br>
-            <h3>
-				<a id="task-analysis" class="anchor" href="#task-analysis" aria-hidden="true">
-					<span class="octicon octicon-link"></span>
-				</a>Task Analysis Questions
-			</h3>
-            <br>
-            <h6>Who is going to use the system?</h6>
-            <div id="section-task-analysis-question-1"></div>
-            <br>
-
-            <h6>What tasks do they now perform?</h6>
-            <div id="section-task-analysis-question-2"></div>
-            <br>
-
-            <h6>What tasks are desired?</h6>
-            <div id="section-task-analysis-question-3"></div>
-            <br>
-
-            <h6>How are the tasks learned?</h6>
-            <div id="section-task-analysis-question-4"></div>
-            <br>
-
-            <h6>Where are the tasks performed?.</h6>
-            <div id="section-task-analysis-question-5"></div>
-            <br>
-
-            <h6>What's the relationship between user and data?</h6>
-            <div id="section-task-analysis-question-6"></div>
-            <br>
-
-            <h6>What other tools does the user have?</h6>
-            <div id="section-task-analysis-question-7"></div>
-            <br>
-
-            <h6>How do users communicate with each other?</h6>
-            <div id="section-task-analysis-question-8"></div>
-            <br>
-
-            <h6>How often are the tasks performed?</h6>
-            <div id="section-task-analysis-question-9"></div>
-            <br>
-
-            <h6>What are the time constraints on the task?</h6>
-            <div id="section-task-analysis-question-10"></div>
-            <br>
-
-            <h6>What happens when things go wrong?</h6>
-            <div id="section-task-analysis-question-11"></div>
-            <br>
-
-            <h3>Requirement Analysis</h3>
-
-            <p>The features are ordered bases on the number of concerns they raised.</p>
-
-            <br>
-            <h5>User Interface</h5>
-            <p>Although we conduct interviews on only four target users, surprisingly there are twenty concerns (one fifth) are about the user interface. The word “nice”, “elegant” or “nice-looking” might be too general to conclude the exact design specifics. Therefore, we kept digging down this thread and found that users want the interface to contains the following detailed features: </p>
-            <h6>Clear</h6>
-            <p>The important informations should be clear to users. For example, the prices or titles should be placed carefully so that the user do not have to switch between pages frequently to check these information
-            </p>
-            <h6>Minimized</h6>
-            <p>
-                only show the core functionalities and necessary details, e.g. show only on-sale items, only commonly used buttons, etc . </p>
-            <h6>intuitive</h6>
-            <h>icons of the buttons should be reasonable enough to induce what will happen if user click it. Less intuitive icons should be grouped with text that is strong enough to tell the functionalities.</h>
-            <h6>Consistent</h6>
-            <p>although it’s a new design, we still need to try to make it consistent to the existing systems. This will make it much easier for users to accept the new system.</p>
-            <h6>Self-Explaining</h6>
-            <p>since user will not bother to read a user guide before using the system, the system has to be self-explaining to some extent. For example, use placeholders to indicator the use of certain textfields, make reasonable titles for pages to help user navigate through the whole system.</p>
-
-            <br>
-            <h5>Standards for Information Format</h5>
-            <p>Among the 101 concerns, 10 are on the information format issues. These issues include user input standard and some unified standard about the book condition. Specifically,</p>
-            <h6>Templates for Users to use</h6>
-            <p>When user want to sell a text book, they should be some post skeletons for users to choose. What they need to do then is just fill in the important figures, such as price, condition, contact, etc. This helps users to recognize information they need to input instead of recalling, thus it lowers the chance that a user miss some important information. These templates should separate the information user input to different sections, each of which has its unique id. This will reserve the space for data manipulations later.</p>
-            <h6>A standard for book conditions</h6>
-            <p>Sometimes descriptions like 9/10, 8/10 do not give the buyers enough information to know about the exact condition of the book. A standard, which could be measured in figures, is need to act as the ruler of such descriptions.</p>
-
-            <br>
-            <h5>Responsiveness</h5>
-            <p>7 concerns are on the responsiveness of system. Users are not satisfied with the connections speed of the existing forum. Something that we need to do include</p>
-            <h6>Efficient Algorithms to Load Views</h6>
-            <p>This might be the main reason why current system operates so slow. We shall keep refine our algorithms to make the system scalable to large user groups.</p>
-            <h6>Deploy on Faster Servers</h6>
-            <p>This may be another factor that affects the performance of the website badly. We may want to deploy it on a faster server when it proves that the performance of current ones is the bottleneck of the system.</p>
-
-            <br>
-            <h5>Picture Attachments</h5>
-
-            <p>6 concerns are on attaching pictures to the post. User want a convenient way to upload and view images. Some requirements are:</p>
-
-            <h6>Easy Uploading</h6>
-            <p>A convenient way to upload pictures. Users need this functionality, but the super troublesome procedure of the currently system keeps them away from this. We need to brainstorm an idea to allow users to upload pictures easily with their smart phone.</p>
-            <h6>Easy Viewing</h6>
-            <p>Since we will support easy uploading, some posts may get many pictures attached inside. We need a organized way to display such pictures.</p>
-
-
-            <br>
-            <h5>Search</h5> Interestingly, only 4 concerns are about the searching functionality of the system, but all of our interviewees view searching as the most important functionality of a textbook forum. The requirements brought up by the users are:
-
-            <h6>Global Search</h6>
-            <p>There should be a way to search among all the books available on the forum. Although we will have different categories, yet we have to provide a second way in case some sellers put their books in the wrong section.</p>
-            <h6>Search for Various Attributes Other Than Title And Module</h6>
-            <p>Some users have the need to search for a specific version of a book while others may need to search for authors. We need to extend the current search engine to accept keywords in more domains.</p>
-            <h6>Specification of The Relationship between Keywords.</h6>
-            <p>Some users may need only one of the keywords they input is satisfied by the shown results while others may require the results met all the keywords. We need to provide a way for the user to specify which relationship they want. (AND-relationship or OR-relationship) </p>
-            <br>
-            <br>
-            <br>
-
-            <div id="persona">
-            </div>
-            <h3>
-                <a id="contextual-inquiry" class="anchor" href="#contextual-inquiry" aria-hidden="true">
-                    <span class="octicon octicon-link"></span>
-                </a>Persona
-            </h3>
-
-            <h4>Persona 1</h4>
-            <h6>Profile</h6>
-            <div class="grid">
-                <div class="row">
-                    <div class="col-xs-4">
-                        <div class="big-box"><img height="200px" src="images/jason.jpg"></div>
-                    </div>
-                    <div class="col-xs-8">
-                        <div class="row">
-                            <div class="col-xs-4"><div style="text-align:right" class="mini-box"><strong>Name</strong></div></div>
-                            <div class="col-xs-8"><div class="mini-box">Jason</div></div>
-
-                            <div class="col-xs-4"><div style="text-align:right" class="mini-box"><strong>Age</strong></div></div>
-                            <div class="col-xs-8"><div class="mini-box">26</div></div>
-
-                            <div class="col-xs-4"><div style="text-align:right" class="mini-box"><strong>Gender</strong></div></div>
-                            <div class="col-xs-8"><div class="mini-box">Male</div></div>
-
-                            <div class="col-xs-4"><div style="text-align:right" class="mini-box"><strong>Major</strong></div></div>
-                            <div class="col-xs-8"><div class="mini-box">Computer Science</div></div>
-
-                            <div class="col-xs-4"><div style="text-align:right" class="mini-box"><strong>Year of Study</strong></div></div>
-                            <div class="col-xs-8"><div class="mini-box">4</div></div>
-
-                            <div class="col-xs-4"><div style="text-align:right" class="mini-box"><strong>Occupation</strong></div></div>
-                            <div class="col-xs-8"><div class="mini-box">Undergraduate in NUS</div></div>
-
-                            <div class="col-xs-4"><div style="text-align:right" class="mini-box"><strong>Hobbies</strong></div></div>
-                            <div class="col-xs-8"><div class="mini-box">Running, trendy high-tech stuff</div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <h6>Background</h6>
-            <p>
-            Jason is a year four computer science undergraduate in NUS. Since his study focus lies into a computer-related area, he interacts with computers every and is very familiar with the computer systems. He has been in NUS for seven semesters and has taken over thirty modules. Among those modules, over 70% requires one or more textbooks for the students to follow. Jason thus has accumulated a large bunch of textbooks of the modules he has taken. Hence, he decides to sell those used-textbooks instead throwing into into trash bins directly. He tried a few online used textbook trading platforms, but very few juniors contact him and ask about the textbooks.
-            </p>
-            <br />
-            <h6>Goals</h6>
-            <ul>
-                <li>
-                    Primary Goal
-                    <ul>
-                        <li>Selling certain used textbooks</li>
-                    </ul>
-                </li>
-                <li>
-                    Sub-Goals
-                    <ul>
-                        <li><strong>Post Textbook Information:</strong>
-                            <div style='font-size: 16px;'>
-                            “I would like to post textbook information and my contact information on the platform in order to advertising my book. These info may include the book title, the module it is used in, a picture of the cover, its author, version, condition and my phone numbers.”</div></li><br>
-                        <li><strong>View the popularity of a certain textbook:</strong>
-                            <div style='font-size: 16px;'>
-                            “It would be great if I can see the need of the books I want to sell in the market and check if it has already been in someone’s wishing list. It’s even better if I can know the wisher’s name and contact info, since I would contact them directly rather than wait for some unknown buyers to contact me.”</div></li><br>
-                        <li><strong>View the average price of a certain textbook: </strong>
-                            <div style='font-size: 16px;'>
-                            “I don’t really know how to price my book. If I can see the average price of the existing ones, maybe it would be easier for me to set my price.”</div></li><br>
-                        <li><strong>Share the post: </strong>
-                            <div style='font-size: 16px;'>
-                            “Sometimes I want to post the selling info to my social networks, but it’s really boring and troublesome to enter all those information again. It would be much more convenient if there is a button for me to share the post directly.”</div></li>
-                    </ul>
-                </li>
-            </ul>
-
-            <h4>Persona 2</h4>
-            <h6>Profile</h6>
-            <div class="grid">
-                <div class="row">
-                    <div class="col-xs-4">
-                        <div class="big-box"><img height="200px" src="images/lucy.jpg"></div>
-                    </div>
-                    <div class="col-xs-8">
-                        <div class="row">
-                            <div class="col-xs-4"><div style="text-align:right" class="mini-box"><strong>Name</strong></div></div>
-                            <div class="col-xs-8"><div class="mini-box">Lucy</div></div>
-
-                            <div class="col-xs-4"><div style="text-align:right" class="mini-box"><strong>Age</strong></div></div>
-                            <div class="col-xs-8"><div class="mini-box">22</div></div>
-
-                            <div class="col-xs-4"><div style="text-align:right" class="mini-box"><strong>Gender</strong></div></div>
-                            <div class="col-xs-8"><div class="mini-box">Female</div></div>
-
-                            <div class="col-xs-4"><div style="text-align:right" class="mini-box"><strong>Major</strong></div></div>
-                            <div class="col-xs-8"><div class="mini-box">Chinese Study</div></div>
-
-                            <div class="col-xs-4"><div style="text-align:right" class="mini-box"><strong>Year of Study</strong></div></div>
-                            <div class="col-xs-8"><div class="mini-box">1</div></div>
-
-                            <div class="col-xs-4"><div style="text-align:right" class="mini-box"><strong>Occupation</strong></div></div>
-                            <div class="col-xs-8"><div class="mini-box">Undergraduate in NUS</div></div>
-
-                            <div class="col-xs-4"><div style="text-align:right" class="mini-box"><strong>Hobbies</strong></div></div>
-                            <div class="col-xs-8"><div class="mini-box">Music & Drawing</div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <h6>Background</h6>
-            <p>
-            Lucy has just joined NUS and she doesn’t know many seniors in the university. She is majored in Chinese Study in Faculty of Arts and Social Sciences and thus she is not very familiar with the computer systems. In the first lectures of the semester, she was told that she would need to buy the textbooks used in the module to catch up with the lecturer’s teaching progress. However, when she walked into bookstores and finally find the right book, she was shocked by the high price. As a result, she turns to seek a platform to buy the used-textbooks in good condition with much lower price. She has tried the textbook forum provided by the school. However, when she logged into the page, she was confused and didn’t know where to start. After several tries, she found the textbook which she wanted. However, after she left a message under the post, she never got replies. She guessed that the seller might have already sold the book or he/she never check the post again.
-            </p>
-            <br />
-            <h6>Goals</h6>
-            <ul>
-                <li>
-                    Primary Goal
-                    <ul>
-                        <li>Buy certain used-textbooks</li>
-                    </ul>
-                </li>
-                <li>
-                    Sub-Goals
-                    <ul>
-                        <li>Search for the book: 
-                            <br>“The most important thing for me is to find my desired book. Sometimes I may need to search for the module code of the corresponding module, or I may need to directly search the book’s name.”</li>
-                        <li>Compare the price: 
-                            <br>“After all, the reason why I chose to buy a used-textbook is its low price. It would be great if the qualified books (after searching) can be sorted with respect to their price. Then It would be easier for me to choose only from the cheapest ones.”</li>
-                        <li>Compare the condition: 
-                            <br>“Some books with super low price are in very bad conditions and this is not the kind I want. I want to be able to compare the condition of the books and choose the one with best condition and reasonable price.”</li>
-                        <li>Contact with seller effectively: 
-                            <br>“I could not get the response from the seller in time. I would like to know whether the item has been sold and I would like to contact the seller in a more effecient way. ”</li>
-                    </ul>
-                </li>
-            </ul>
-
-
-
         </section>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-
-
-        <footer>
-            <span class="ribbon-outer">
-                <span class="ribbon-inner"><p>&nbsp;</p></span>
-            <span class="left-tail"></span>
-            <span class="right-tail"></span>
-            </span>
-            <p>Project Status Website, CS3240 AY14/15 Semester 2, Moon One</p>
-        </footer>
-
     </div>
-
-
-
 </body>
 
 </html>

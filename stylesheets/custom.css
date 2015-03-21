@@ -13,4 +13,6 @@
 
 .prosandcons td{
 	padding: 0px;
+    width: 160px;
+    font-size: 10px;
 }

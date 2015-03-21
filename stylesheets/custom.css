@@ -6,3 +6,11 @@
 	width: 100%;
 	max-width: 8000px;
 }
+
+.prosandcons ul{
+	padding-left: 0.2em;
+}
+
+.prosandcons td{
+	padding: 0px;
+}

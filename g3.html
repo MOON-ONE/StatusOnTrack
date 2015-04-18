@@ -319,7 +319,7 @@
                 <a id="contextual-inquiry" class="anchor" href="#contextual-inquiry" aria-hidden="true">
                     <span class="octicon octicon-link"></span>
                 </a>
-                Findings
+                Major Findings
             </h3>
 
             <h5>Successful</h5>
@@ -417,99 +417,81 @@
             </table>
             
             
+            <h4>
+                Insights
+            </h4>
             <br>
-            
-            <h4>Major findings</h4>
             <h5>Search</h5>
-<pre>
-
-1. Search bar should be placed on top of the page. The search button will 
-   contain a dropdown list, in which user can specify various search criteria.
-   
-2. User can select multiple search results, and toggle the visibility of 
-   unselected ones.
-   
-</pre>
-
-            <h5>Compare</h5>
-<pre>
-
-1. The column name should be clickable. Once clicked, the system will sort 
-   the items according to the value of this column. Keep clicking will reverse 
-   the order.
-   
-2. Smart sorting: ranks are calculated from price and condition.
-
-3. Statistics: average, minimum, maximum price and total number of books (All
-   figures are calculated based on current visible result).
-   
-4. When a seller is filling the book info, relative statistics will be shown. 
-   (A background search is performed by the system, and the values shown is 
-   calculated based on the search result)
-   
-</pre>
-
+            <p>The search design is successful because we put it at the top of the page to highlight it. And we also add some description inside the search bar to tell the users what to type in. The function can run well because we implement it by using angular-js.</p>
+            <br>
             <h5>Post</h5>
-            <pre>
-            
-1. In some of our prototypes, the posts have been categorized into “selling 
-   wishes” and “buying wishes”. However, base on the evaluation, most of the 
-   users will ignore the “buying wishes” section. They tend to use the search 
-   functionality to find what they want. Therefore, we decide to remain only 
-   selling wishes section. However, in some special cases, the user may not 
-   find what they want. In this case, we allow the user to add it to the his/
-   her wish list. Later if some one post a qualified book on the forum, the 
-   user will be notified (by email, etc.)
-
-2. We find that we may include the following information:
-    2.1 Book Specifics
-        2.1.1 Module Code (*)
-        2.1.2 Book Title (*)
-        2.1.3 Author
-        2.1.4 Edition
-        2.1.5 Condition: Checklist & a figure from 1 to 10
-        2.1.6 Photo: upload from desktop or smart phone
-    2.2 Contact Specifics
-        2.2.1 Phone (*)
-        2.2.2 Email
-    2.3 Order Specifics
-        2.3.1 Price
-        2.3.2 Remark
-        
-3. A preview will be shown for confirmation before the post is actually 
-   recorded in the database.
-            </pre>
-
-            <h5>Account</h5>
             <p>
-                (This is not mentioned in the three key tasks above, but we find that it is closely related to them during the user evaluation. Therefore we put it here as a major finding or a requirement for our G3 high-fidelity prototype.)
+                The post section is successful because we standardize the input fields and provide all the categories user may need. We also try to list them clearly. We also provide the checkbox for users to choose to show the specific condition information.
+                <br>
+                <br>
+                However, the post section is not perfect. It is because some user may not understand how to rank the condition of a book. We do not provide this kind of guideline on the page. Also, some user complains that the create post button can not be found. It is because we do not put it at the bottom as usual while putting it on the top right. As a result, users may feel confused about it.
             </p>
+            <br>
+            <h5>Comparison</h5>
+            <p>
+                Similarly, there are some successful parts about the comparison section since we allow user to select his/her interested posts and toggle the visibility of the unselected ones. Moreover, our standardized format will help users to compare different posts directly.
+                <br>
+                <br>
+                However, there is no way for differentiating those posts with the same “title, module code, price and condition” because we do not have special information for every post, like post date. Lacking of this information, those similar posts will be hard to be differentiated.
+            </p>
+            <br>
+            <h5>Overall User Interface</h5>
+            <p>
+                This part actually has the largest amount of problems. We can have some positive feedbacks because we mainly focus on providing a neat and clear UI. Hence, user have feedbacks like “very clear and neat.” And also we try to add some guidelines to help users understand the functions. 
+                <br>
+                <br>
+                However, since we focus too much on the neat and clear UI, the overall design mat be too simple. As a result, there is no many decorations there. Hence, some users may think the overall UI is not so interesting. Another issue is the icons. The icons we choose is not so matched with our contents. 
+            </p>
+            <br>
+            <h5>Responsiveness of the Whole System</h5>
+            <p>
+                The overall responsiveness of the whole system is good now because we implement the functions in angular-js for searching and sorting.
+            </p>
+
+            <br>
+            <br>
+            <br>
+
+
+            <div id="adjustment">
+            </div>
+            <h3>
+                <a id="contextual-inquiry" class="anchor" href="#contextual-inquiry" aria-hidden="true">
+                    <span class="octicon octicon-link"></span>
+                </a>
+                Possible Adjustments
+            </h3>
 <pre>
 
-1. User can modified their contacts. (Which will be used to pre-fill 
-   corresponding fields when they create a post)
+1.  The first adjustment we want to make is to add some tips on 
+    judging the condition. This is because some users may not know 
+    how to rate the condition. 
 
-2. User can view their historical posts, renew them or mark them with 
-   “Sold out” or “Close”.
+2.  We also want to change the position or UI of the create post 
+    button to make it more obvious.
 
+3.  For differentiating two similar posts, we will take this into 
+    consideration but we may not make adjustments on it. Because 
+    we think add one more column like “post date” will make the 
+    home page become messy.
+
+4.  For the overall UI, we would like to add more colors to make 
+    it look somewhat more colorful. But we will not add some 
+    decorations on the page because we think it will make the 
+    website become messy, as well.
+
+5.  For the icon issue, we will try to choose some more appropriate 
+    icons. This is because users have more direct feeling on the 
+    design. Sometimes as designer, we may think the design is ok. 
+    But for users, they may think it’s confused. I think the icon 
+    issue here is an example.
+   
 </pre>
-
-            <br />
-            
-            <h4>Summary & Reflection</h4>
-            <br>
-            <p>
-            In G2, each of the team member has come up with an low-fidelity prototype. We evaluated each of the prototypes with 4 of our target users. In the process of evaluation, the author of the prototype helped the user to carry on with simulation while the rest of the team record the words and behaviors of the user. It’s a formative evaluation, we will improve our designs with the feedback of current prototypes from the potential users. 
-            <br>
-            <br>
-            During the evaluation process, user will “think aloud” - to tell us how he/she is thinking or feeling and help us to understand more about the experience the system bring to him/her. The overall evaluation result is acceptable: we conclude the pros and cons from different prototype, list them in a form for easy comparison and we finally combine the good features from the 4 individual prototype to construct a single and integrate one.
-            <br />
-            <br />
-            We are glad that we have always kept the two personas we came up with in Step One in our minds. The whole evaluation process is carried out with respects to the three main task from the two persona, namely searching, posting and comparing. We asked every testing user to proceed the three tasks and record their opinions. Nevertheless, we do not restrict them from side-lines: users can always give us whatever feedbacks or comments they want to give.
-            <br />
-            <br />
-            However, there are problems occurring during the evaluation process. The most severe one is that the quality of prototypes is not good enough.  Only very basic low-fi paper prototypes are built to cover the main three task. Although this is the requirements specified inside the project manual and it might be good enough for us to burst some creative ideas, personally I think such low fidelity will bring in very much distraction when we are actually carrying out the evaluation. Most of the users cannot directly understand the meaning for the various components in the prototype. They tend to ask the designer to explain the interface. Without the explanation from the designer, it is very hard for users to find out how the system works. It is because low fidelity and incompleteness of the prototype do not allow them to do the trail & error explorations. However, if the designer explain how the system works, then it seems the purpose of evaluation is violated because during the actual use, designers cannot be aside to every user to guide them through the system. As this stage, personally we think doing an expert evaluation is more appropriate since we can explain the work flow of the system to experts and then they can evaluate the system with the heuristics and their own expertise. Such evaluation is much more insusceptible to the fidelity of prototype than those walkthrough evaluations involving actual users.
-            </p>
 
         </section>
         <br />

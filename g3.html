@@ -160,9 +160,104 @@
                 </tr>
             </table>
 
+            <br>
+            <br>
 
-            <br>        
-
+            <div id="overview">
+            </div>
+            <h3>
+                <a id="contextual-inquiry" class="anchor" href="#contextual-inquiry" aria-hidden="true">
+                    <span class="octicon octicon-link"></span>
+                </a>
+                Overview 
+            </h3>
+            <br>
+            <h4>Final Prototype</h4>
+            <a href="http://moon-one.github.io/N-USED/" target="_blank">Online Demo</a>
+            <br>
+            <!-- problem -->
+            <h4>Problems</h4>
+            <p>The overall problems we want to solve is actually the three key tasks, namely, search, post and comparison. We want to improve the user experience on theses three key tasks to help them to finish the tasks better and wasier. Furthermore, we also have some additional problems which we want to tackle. Solving these problems may not help the user in finishing the key tasks. However, it produce other benefits like save the user time, etc. These problems can be generally categorized into 2 types, the overall user interface, the responsiveness of the whole system and also attachments.</p>
+            <br>
+            <h5>Search</h5>
+            <p>
+                Previously, the search function is not obvious. User have to look around to find out the search bar. It is because the search bar is not in a outstanding position and the size of it is too small. 
+                <br>
+                <br>
+                And the function of the search bar is quite confusing and not useful. For example, in the home page, it can only search the result within the same page. There is no a powerful global search, either. The user has to go into different faculty page to search the specific books. They cannot directly just use a global search to find out what they want. 
+                <br>
+                <br>
+                At the same time, the search algorithm also has problems. The results after searching are listed randomly. Moreover, it is not clear whether the result is listed because its title contains the keyword or the description inside the post contains the keyword. It may make user confused if there is no keyword in the title but inside the post. They may think the search function give them a wrong result. 
+            </p>
+            <br>
+            <h5>Post</h5>
+            <p>
+                The post page before has a lot of UI problems. Most of the users complain that there are too many useless buttons inside the post box, especially for audio attachment function. They have no idea why we need an audio attachment for selling or buying used textbooks. With so many buttons, the whole post looks very messy.
+                <br>
+                <br>
+                The post box do not have a guideline on what need to be filled in, as well. It’s just a simple message box. There is no a standard way for the posting. So two posts may have a totally different layout, which may make the user feel confused and spend lots of time on finding the necessary information. 
+            </p>
+            <br>
+            <h5>Comparison</h5>
+            <p>
+                In the old used textbook forum, no comparison functions are provided. It is because there is no a standard format on the input. So data like price is not stored on a comparable base. As a result, the difference between two posts are not intuitive. So it may become difficult for a user to decide from two different selling information. 
+                <br>
+                <br>
+                hand, comparison should also allow users to select some interested posts and compare them. It is quite common that in current forum, there are many posts on the same book. However, users may be on interested in some of them. So if a system allows them to choose and display the interested posts,  it will be a great help
+            </p>
+            <br>
+            <h5>Overall user interface</h5>
+            <p>
+                The whole design for the forum is not attractive. Everything inside the forum has an IVLE design style which is not that colorful and impressive. Especially, user2 mentioned that he may not want to use the old style forum if there is a newer and nicer one. And those important information has not been highlighted.
+            </p>
+            <br>
+            <h5>The responsiveness of the whole system </h5>
+            <p>
+                In almost every interview, when we want to click on each faculty entry to search related textbooks, the loading time was very long. Furthermore, the time for search function to produce a result is very long. 
+            </p>
+            <!-- problem end -->
+            <!-- solutions -->
+            <h4>Solutions</h4>
+            <p>To solve the problems as mentioned above, we do a lot of user research and finally come out with some solutions.</p>
+            <br>
+            <h5>Search</h5>
+            <p>
+                On the design part, the overall design of the search bar is very neat and clear. We put the search bar on top of the page and make the search bar as large as possible in order to make it be more outstanding. We also add some descriptions inside the search bar to show users what they can key in for searching. 
+                <br>
+                <br>
+                On the function part, we implement powerful search function to the search bar by using angular js. The search function can not only support the global search but also can show the result very fast. Almost when you type in something, the results will change accordingly. To show the result more clearly, we list the search results by module code and post date to solve the previous problem “random listing”.
+            </p>
+            <br>
+            <h5>Post</h5>
+            <p>
+                To solve the UI problems, we decide to cut a lot of elements which remain in the current IVLE forum. For example, we cut the audio attachment, a lot of buttons and also the post box. In order to guide the user to fill the information, we standardize the input field for every post. So after clicking on the “post” icon, they will be directed to a new page. The necessary information will be listed clearly inside the page. What users need to do is just to fill in the according field, so that they do not need to worry about what information they need to write down. Based on this design, all posts will have same layout. We also implement the attachment function. But this time, we only allow the photo uploading to minimize the design elements.
+                <br>
+                <br>
+                After user clicking on create post, a new post will be automatically generated. A preview page will be shown. The information will be listed out clearly. 
+            </p>
+            <br>
+            <h5>Comparison</h5>
+            <p>
+                Based on our design, users can directly compare the items in the home page now. It is because we standardize the format for every post. Hence, in the home page, you can see those important information like price and book condition are listed within their own column. So it will be very convenient for users to compare different posts. 
+                <br>
+                <br>
+                To make the comparison function more helpful, we also allow the users to select those interested posts. And there will be a button “show selected only” for them to toggle the visibility of unselected ones. As a result, users can directly compare those interested posts.
+            </p>
+            <br>
+            <h5>User interface</h5>
+            <p>
+                To solve the UI problems, we totally change the overall UI design. We try to design a modern and cool website to make it more attractive. So we use a popular “Flat Design” to make every element look flat. We also use black and white as main color to make it as neat as possible. Why we choose back and white is also because they are cool enough. We also add some nice effects to make the website different. For example, if you click on the hamburger icon on the top left, it will show a push effect to push the whole page to the right. 
+                <br>
+                <br>
+                We also try to minimize our elements to make the whole website simple and neat. Everything you can see on the website is necessary or helpful. You will not find anything redundant. 
+            </p>
+            <br>
+            <h5>The responsiveness of the whole system</h5>
+            <p>
+                To solve the problem, as mentioned above, we use angular js for result listing. Aagular js allows fast data search and sorting. It has a lot of powerful functions associated with sorting, searching and filtering. By implementing the angular js functions, the result for search can be shown immediately.
+            </p>
+            <br>
+            <br>
 
             <div id="evaluation">
             </div>
@@ -177,11 +272,13 @@
 
             <h4>Introduction</h4>
             <p>
-            After fixing our key tasks and finishing the storyboard and prototypes, we need to conduct a formative evaluation before we finalize our prototype and dive into development process. We choose think aloud as our evaluation method, each user will speak out their thoughts/comments upon the mock system they are interacting with. From the user’s experience, we can refine the statements he or she makes and list all the advantages and disadvantages of each prototype, which leads to our retrospective review and final prototype building. Besides, the user may also give us valuable suggestion as he or she is playing around the system. In order to capture all the useful points from the user, we have two members in charge of notes-taking, we also take audio recording of the user in case we miss some of the important points in our side notes. Finally, we will analyze the points we take down, summarize it, and build a pros and cons table.
+            We basically conduct a formative evaluation on our final interactive prototype. We choose think aloud as our evaluation method. 
+            <br>
+            <br>
+            We have invited totally three users to evaluate our final prototype. Each user will conduct the three key task we have described in G2, namely, search, post and compare. During the process conducting the three tasks, they need to speak out their thoughts/comments upon the final prototype they are interacting with. From the user’s experience, we can refine the statements he or she makes and list all the advantages and disadvantages of the prototype, which leads to our retrospective review and final prototype improvement. Besides, the user may also give us valuable suggestion as he or she is playing around the system. In order to capture all the useful points from the user, we have two members in charge of notes-taking, we also take audio recording of the user in case we miss some of the important points in our side notes. Finally, we will analyze the points we take down, summarize it, and know about where we are successful and where are not.
             </p>
             
             <h4 id="raw_data">Raw data</h4>
-            <h5>Prototype 1</h5>
             <table>
                 <th>
                     <td align='center'>Audio Recordings</td>
@@ -190,345 +287,214 @@
                 <tr>
                     <td align='center'>User 1</td>
                     <td align='center'>
-                        <a href="data/G2/audios/p1-1.m4a" class="user-mention">M4A</a>
+                        <a href="data/G2/audios/User1.m4a" class="user-mention">M4A</a>
                     </td>
                     <td align='center'>
-                        <a href="data/G2/prototypes/p1-1.pdf" class="user-mention">PDF</a>
+                        <a href="data/G2/pdf/User1.pdf" class="user-mention">PDF</a>
                     </td>
                 </tr>
                 <tr>
                     <td align='center'>User 2</td>
                     <td align='center'>
-                        <a href="data/G2/audios/p1-2.m4a" class="user-mention">M4A</a>
+                        <a href="data/G2/audios/User2.m4a" class="user-mention">M4A</a>
                     </td>
                     <td align='center'>
-                        <a href="data/G2/prototypes/p1-2.pdf" class="user-mention">PDF</a>
+                        <a href="data/G2/pdf/User2.pdf" class="user-mention">PDF</a>
                     </td>
                 </tr>
                 <tr>
                     <td align='center'>User 3</td>
                     <td align='center'>
-                        <a href="data/G2/audios/p1-3.m4a" class="user-mention">M4A</a>
+                        <a href="data/G2/audios/User3.m4a" class="user-mention">M4A</a>
                     </td>
                     <td align='center'>
-                        <a href="data/G2/prototypes/p1-3.pdf" class="user-mention">PDF</a>
+                        <a href="data/G2/pdf/User4.pdf" class="user-mention">PDF</a>
                     </td>
                 </tr>
             </table>
             <br />
 
-            <h5>Prototype 2</h5>
-            <table>
-                <th>
-                    <td align='center'>Audio Recordings</td>
-                    <td align='center'>Field Notes</td>
-                </th>
-                <tr>
-                    <td align='center'>User 1</td>
-                    <td align='center'>
-                        <a href="data/G2/audios/p2-1.m4a" class="user-mention">M4A</a>
-                    </td>
-                    <td align='center'>
-                        <a href="data/G2/prototypes/p2-1.pdf" class="user-mention">PDF</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td align='center'>User 2</td>
-                    <td align='center'>
-                        <a href="data/G2/audios/p2-2.m4a" class="user-mention">M4A</a>
-                    </td>
-                    <td align='center'>
-                        <a href="data/G2/prototypes/p2-2.pdf" class="user-mention">PDF</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td align='center'>User 3</td>
-                    <td align='center'>
-                        <a href="data/G2/audios/p2-3.m4a" class="user-mention">M4A</a>
-                    </td>
-                    <td align='center'>
-                        <a href="data/G2/prototypes/p2-3.pdf" class="user-mention">PDF</a>
-                    </td>
-                </tr>
-            </table>
-            <br />
-
-            <h5>Prototype 3</h5>
-            <table>
-                <th>
-                    <td align='center'>Audio Recordings</td>
-                    <td align='center'>Field Notes</td>
-                </th>
-                <tr>
-                    <td align='center'>User 1</td>
-                    <td align='center'>
-                        <a href="data/G2/audios/p3-1.m4a" class="user-mention">M4A</a>
-                    </td>
-                    <td align='center'>
-                        <a href="data/G2/prototypes/p3-1.pdf" class="user-mention">PDF</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td align='center'>User 2</td>
-                    <td align='center'>
-                        <a href="data/G2/audios/p3-2.m4a" class="user-mention">M4A</a>
-                    </td>
-                    <td align='center'>
-                        <a href="data/G2/prototypes/p3-2.pdf" class="user-mention">PDF</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td align='center'>User 3</td>
-                    <td align='center'>
-                        <a href="data/G2/audios/p3-3.m4a" class="user-mention">M4A</a>
-                    </td>
-                    <td align='center'>
-                        <a href="data/G2/prototypes/p3-3.pdf" class="user-mention">PDF</a>
-                    </td>
-                </tr>
-            </table>
-            <br />
-
-            <h5>Prototype 4</h5>
-            <table>
-                <th>
-                    <td align='center'>Audio Recordings</td>
-                    <td align='center'>Field Notes</td>
-                </th>
-                <tr>
-                    <td align='center'>User 1</td>
-                    <td align='center'>
-                        <a href="data/G2/audios/p4-1.m4a" class="user-mention">M4A</a>
-                    </td>
-                    <td align='center'>
-                        <a href="data/G2/prototypes/p4-1.pdf" class="user-mention">PDF</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td align='center'>User 2</td>
-                    <td align='center'>
-                        <a href="data/G2/audios/p4-2.m4a" class="user-mention">M4A</a>
-                    </td>
-                    <td align='center'>
-                        <a href="data/G2/prototypes/p4-2.pdf" class="user-mention">PDF</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td align='center'>User 3</td>
-                    <td align='center'>
-                        <a href="data/G2/audios/p4-3.m4a" class="user-mention">M4A</a>
-                    </td>
-                    <td align='center'>
-                        <a href="data/G2/prototypes/p4-3.pdf" class="user-mention">PDF</a>
-                    </td>
-                </tr>
-            </table>
-            <br />
-
-            <h4>Pros and Cons of the prototypes</h4>
-            <h5>Pros</h5>
-            <table class="prosandcons">
-                <tr>
-                    <th><a class="page-scroll" href="#prototype-1">Prototype 1</a></th>
-                    <th><a class="page-scroll" href="#prototype-2">Prototype 2</a></th>
-                    <th><a class="page-scroll" href="#prototype-3">Prototype 3</a></th>
-                    <th><a class="page-scroll" href="#prototype-4">Prototype 4</a></th>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>Interface is concise.</li>
-                            <li>Will check all the “want to buy” data first before user want to sell a book.</li>
-                            <li>Easy for chatting.</li>
-                            <li>Automatically fill in the contact based on the personal information.</li>
-                            <li>Good usage of tag bars.</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>A special section for checking “my post”.</li>
-                            <li>Some useful help guide entries.</li>
-                            <li>Notifications.</li>
-                            <li>Can post multiple books at the same time.</li>
-                            <li>Sorting is clear and useful.</li>
-                            <li>Searching results can be clearly divided into “WTB” and “WTS”.</li>
-                            <li>Price and condition have different color for highlighting.</li>
-                            <li>Preview function.</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Clear and concise interface.</li>
-                            <li>Consistent icons.</li>
-                            <li>Good color schemes.</li>
-                            <li>Minimized information-no information overflowed.</li>
-                            <li>Allow result selection.</li>
-                            <li>Good drawer animation design.</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Modern interface design-because with pictures displaying.</li>
-                            <li>Comprehensive information for guiding users on how to post.</li>
-                            <li>Expiration and renewal mechanism.</li>
-                            <li>Easy entry for uploading photos by QR code.</li>
-                            <li>Checklist and suggested condition.</li>
-                            <li>Title and author auto fill in based on ISBN.</li>
-                            <li>Support two different types of display modes.</li>
-                            <li>Search targets selection.</li>
-                            <li>Scope selection.</li>
-                            <li>Smart sorting algorithm.</li>
-                            <li>Useful figures.</li>
-                            <li>My wish list</li>
-                        </ul>
-                    </td>
-                </tr>
-
-            </table>
-            
-            <h5>Cons</h5>
-            <table class="prosandcons">
-                <tr>
-                    <th><a class="page-scroll" href="#prototype-1">Prototype 1</a></th>
-                    <th><a class="page-scroll" href="#prototype-2">Prototype 2</a></th>
-                    <th><a class="page-scroll" href="#prototype-3">Prototype 3</a></th>
-                    <th><a class="page-scroll" href="#prototype-4">Prototype 4</a></th>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>Not clear about whether it’s for selling or want to buy in the searching result.</li>
-                            <li>The abbrreviation may be confusing.</li>
-                            <li>The layout is confusing: title and module code are under price and condition columns.</li>
-                            <li>Confusing icons.</li>
-                            <li>Bad color schemes.</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Layout problem-The position of search bar and account.</li>
-                            <li>Unnecessary information-Author name displaying in the lists.</li>
-                            <li>Confusing button names.</li>
-                            <li>Inconsistent/confusing icon design.</li>
-                            <li>Not user friendly function - Computing average/max/min price (what if there are various books in a module).</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Not enough information for selling.</li>
-                            <li>Confusing icon design - advanced search.</li>
-                            <li>Sorting function is confusing - from low to high or from high to low?</li>
-                            <li>No idea on how to fill in the conditions.</li>
-                            <li>No way for finding out my history posts.</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Information overflowed.</li>
-                            <li>Some confusing terms - Target, Scope, etc.</li>
-                            <li>Layout - some bars are too long.</li>
-                            <li>To much readings.</li>
-                            <li>Attachments are over-highlighted.</li>
-                        </ul>
-                    </td>
-                </tr>
-
-            </table>
-            
-            
             <br>
+            <br>
+            <div id="findings">
+            </div>
+            <h3>
+                <a id="contextual-inquiry" class="anchor" href="#contextual-inquiry" aria-hidden="true">
+                    <span class="octicon octicon-link"></span>
+                </a>
+                Major Findings
+            </h3>
+
+            <h5>Successful</h5>
+            <table class="prosandcons">
+                <tr>
+                    <th>Search</th>
+                    <th>Post</th>
+                    <th>Comparison</th>
+                    <th>UI</th>
+                    <th>Responsiveness</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>The position of search bar is very outstanding and obvious.</li>
+                            <li>The global search function is fast and useful. It perfectly meet the user requirements on search.</li>
+                            <li>The description inside search bar is clear and helpful.</li>
+                            <li>Search function supports many different kinds of keywords, like figures and words.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>The input fields within a post is very clear.</li>
+                            <li>It provides all the categories user want.</li>
+                            <li>The attachment function is convenient.</li>
+                            <li>There are some helpful checkbox under the condition fields for buyers to know more about the specific condition.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>There is selection function for user to select interested posts. It’s very useful and cool.</li>
+                            <li>It’s convenient for user to compare different items since the post format is standard.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Very clear and neat.</li>
+                            <li>User can get the information directly.</li>
+                            <li>There are some helpful guidelines or small tips everywhere inside the website.</li>
+                            <li>The nav bar “push” effect is quite cool.</li>
+                            <li>Posts are well listed in the homepage.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>After clicking the icons or posts in the website, the page can respond very quickly.</li>
+                            <li>The search result coms out very quickly.</li>
+                        </ul>
+                    </td>
+                </tr>
+
+            </table>
             
-            <h4>Major findings</h4>
+            <h5>Unsuccessful</h5>
+            <table class="prosandcons">
+                <tr>
+                    <th>Search</th>
+                    <th>Post</th>
+                    <th>Comparison</th>
+                    <th>UI</th>
+                    <th>Responsiveness</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Some users hope to see the pictures of the books in the homepage.</li>
+                            <li>Give more tips on how to judge the condition of a book.</li>
+                            <li>The create post button is hard to be found.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>No way for differentiating those posts with the same “title, module code, price and condition”. </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>The meaning of “N-USED” is not so direct, which may make the user confusing. </li>
+                            <li>The overall design mat be too simple. No many decorations there. Not so interesting.</li>
+                            <li>Some words are too small to rand from a big monitor. </li>
+                            <li>The color may be too simple. Can be more colorful.</li>
+                            <li>Some icons are confusing, especially those on the nav bar.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                        </ul>
+                    </td>
+                </tr>
+
+            </table>
+            
+            
+            <h4>
+                Insights
+            </h4>
+            <br>
             <h5>Search</h5>
-<pre>
-
-1. Search bar should be placed on top of the page. The search button will 
-   contain a dropdown list, in which user can specify various search criteria.
-   
-2. User can select multiple search results, and toggle the visibility of 
-   unselected ones.
-   
-</pre>
-
-            <h5>Compare</h5>
-<pre>
-
-1. The column name should be clickable. Once clicked, the system will sort 
-   the items according to the value of this column. Keep clicking will reverse 
-   the order.
-   
-2. Smart sorting: ranks are calculated from price and condition.
-
-3. Statistics: average, minimum, maximum price and total number of books (All
-   figures are calculated based on current visible result).
-   
-4. When a seller is filling the book info, relative statistics will be shown. 
-   (A background search is performed by the system, and the values shown is 
-   calculated based on the search result)
-   
-</pre>
-
+            <p>The search design is successful because we put it at the top of the page to highlight it. And we also add some description inside the search bar to tell the users what to type in. The function can run well because we implement it by using angular-js.</p>
+            <br>
             <h5>Post</h5>
-            <pre>
-            
-1. In some of our prototypes, the posts have been categorized into “selling 
-   wishes” and “buying wishes”. However, base on the evaluation, most of the 
-   users will ignore the “buying wishes” section. They tend to use the search 
-   functionality to find what they want. Therefore, we decide to remain only 
-   selling wishes section. However, in some special cases, the user may not 
-   find what they want. In this case, we allow the user to add it to the his/
-   her wish list. Later if some one post a qualified book on the forum, the 
-   user will be notified (by email, etc.)
-
-2. We find that we may include the following information:
-    2.1 Book Specifics
-        2.1.1 Module Code (*)
-        2.1.2 Book Title (*)
-        2.1.3 Author
-        2.1.4 Edition
-        2.1.5 Condition: Checklist & a figure from 1 to 10
-        2.1.6 Photo: upload from desktop or smart phone
-    2.2 Contact Specifics
-        2.2.1 Phone (*)
-        2.2.2 Email
-    2.3 Order Specifics
-        2.3.1 Price
-        2.3.2 Remark
-        
-3. A preview will be shown for confirmation before the post is actually 
-   recorded in the database.
-            </pre>
-
-            <h5>Account</h5>
             <p>
-                (This is not mentioned in the three key tasks above, but we find that it is closely related to them during the user evaluation. Therefore we put it here as a major finding or a requirement for our G3 high-fidelity prototype.)
+                The post section is successful because we standardize the input fields and provide all the categories user may need. We also try to list them clearly. We also provide the checkbox for users to choose to show the specific condition information.
+                <br>
+                <br>
+                However, the post section is not perfect. It is because some user may not understand how to rank the condition of a book. We do not provide this kind of guideline on the page. Also, some user complains that the create post button can not be found. It is because we do not put it at the bottom as usual while putting it on the top right. As a result, users may feel confused about it.
             </p>
+            <br>
+            <h5>Comparison</h5>
+            <p>
+                Similarly, there are some successful parts about the comparison section since we allow user to select his/her interested posts and toggle the visibility of the unselected ones. Moreover, our standardized format will help users to compare different posts directly.
+                <br>
+                <br>
+                However, there is no way for differentiating those posts with the same “title, module code, price and condition” because we do not have special information for every post, like post date. Lacking of this information, those similar posts will be hard to be differentiated.
+            </p>
+            <br>
+            <h5>Overall User Interface</h5>
+            <p>
+                This part actually has the largest amount of problems. We can have some positive feedbacks because we mainly focus on providing a neat and clear UI. Hence, user have feedbacks like “very clear and neat.” And also we try to add some guidelines to help users understand the functions. 
+                <br>
+                <br>
+                However, since we focus too much on the neat and clear UI, the overall design mat be too simple. As a result, there is no many decorations there. Hence, some users may think the overall UI is not so interesting. Another issue is the icons. The icons we choose is not so matched with our contents. 
+            </p>
+            <br>
+            <h5>Responsiveness of the Whole System</h5>
+            <p>
+                The overall responsiveness of the whole system is good now because we implement the functions in angular-js for searching and sorting.
+            </p>
+
+            <br>
+            <br>
+            <br>
+
+
+            <div id="adjustment">
+            </div>
+            <h3>
+                <a id="contextual-inquiry" class="anchor" href="#contextual-inquiry" aria-hidden="true">
+                    <span class="octicon octicon-link"></span>
+                </a>
+                Possible Adjustments
+            </h3>
 <pre>
 
-1. User can modified their contacts. (Which will be used to pre-fill 
-   corresponding fields when they create a post)
+1.  The first adjustment we want to make is to add some tips on 
+    judging the condition. This is because some users may not know 
+    how to rate the condition. 
 
-2. User can view their historical posts, renew them or mark them with 
-   “Sold out” or “Close”.
+2.  We also want to change the position or UI of the create post 
+    button to make it more obvious.
 
+3.  For differentiating two similar posts, we will take this into 
+    consideration but we may not make adjustments on it. Because 
+    we think add one more column like “post date” will make the 
+    home page become messy.
+
+4.  For the overall UI, we would like to add more colors to make 
+    it look somewhat more colorful. But we will not add some 
+    decorations on the page because we think it will make the 
+    website become messy, as well.
+
+5.  For the icon issue, we will try to choose some more appropriate 
+    icons. This is because users have more direct feeling on the 
+    design. Sometimes as designer, we may think the design is ok. 
+    But for users, they may think it’s confused. I think the icon 
+    issue here is an example.
+   
 </pre>
-
-            <br />
-            
-            <h4>Summary & Reflection</h4>
-            <br>
-            <p>
-            In G2, each of the team member has come up with an low-fidelity prototype. We evaluated each of the prototypes with 4 of our target users. In the process of evaluation, the author of the prototype helped the user to carry on with simulation while the rest of the team record the words and behaviors of the user. It’s a formative evaluation, we will improve our designs with the feedback of current prototypes from the potential users. 
-            <br>
-            <br>
-            During the evaluation process, user will “think aloud” - to tell us how he/she is thinking or feeling and help us to understand more about the experience the system bring to him/her. The overall evaluation result is acceptable: we conclude the pros and cons from different prototype, list them in a form for easy comparison and we finally combine the good features from the 4 individual prototype to construct a single and integrate one.
-            <br />
-            <br />
-            We are glad that we have always kept the two personas we came up with in Step One in our minds. The whole evaluation process is carried out with respects to the three main task from the two persona, namely searching, posting and comparing. We asked every testing user to proceed the three tasks and record their opinions. Nevertheless, we do not restrict them from side-lines: users can always give us whatever feedbacks or comments they want to give.
-            <br />
-            <br />
-            However, there are problems occurring during the evaluation process. The most severe one is that the quality of prototypes is not good enough.  Only very basic low-fi paper prototypes are built to cover the main three task. Although this is the requirements specified inside the project manual and it might be good enough for us to burst some creative ideas, personally I think such low fidelity will bring in very much distraction when we are actually carrying out the evaluation. Most of the users cannot directly understand the meaning for the various components in the prototype. They tend to ask the designer to explain the interface. Without the explanation from the designer, it is very hard for users to find out how the system works. It is because low fidelity and incompleteness of the prototype do not allow them to do the trail & error explorations. However, if the designer explain how the system works, then it seems the purpose of evaluation is violated because during the actual use, designers cannot be aside to every user to guide them through the system. As this stage, personally we think doing an expert evaluation is more appropriate since we can explain the work flow of the system to experts and then they can evaluate the system with the heuristics and their own expertise. Such evaluation is much more insusceptible to the fidelity of prototype than those walkthrough evaluations involving actual users.
-            </p>
 
         </section>
         <br />
